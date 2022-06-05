@@ -1,0 +1,99 @@
+﻿@using ETrade.Presentation.Areas.Admin.Models
+@model SliderModel
+@{
+    Layout = "_Layout";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Slider Transactions</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                        <li class="breadcrumb-item active">Slider Transactions</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- general form elements -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Slider Add</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form asp-controller="Sliders" asp-action="AddSlider" method="post" enctype="multipart/form-data">
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label asp-for="Image" class="col-md-2 col-form-label"></label>
+                                    <div class="col-md-10">
+                                        @*<input type="hidden" asp-for="Name" value="" />*@
+                                        <img src="" width="80" />
+                                        <input type="file" name="Image" />  @*Kontroller'deki file ismini burada name'e verdik*@
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Header</label>
+                                    <input class="form-control" asp-for="Header" placeholder="Header">
+                                    <span asp-validation-for="Header"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Description</label>
+                                    <input class="form-control" asp-for="Description" placeholder="Description">
+                                    <span asp-validation-for="Description"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Link</label>
+                                    <input class="form-control" asp-for="Link" placeholder="Link">
+                                    <span asp-validation-for="Link"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">EndDate</label>
+                                    <input class="form-control" asp-for="EndDate" placeholder="EndDate">
+                                    <span asp-validation-for="EndDate"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Status</label>
+                                    <input class="form-control" asp-for="Status" placeholder="Status">
+                                    <span asp-validation-for="Status"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Sort</label>
+                                    <input class="form-control" asp-for="Sort" placeholder="Sort">
+                                    <span asp-validation-for="Sort"></span>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.card -->
+
+
+                </div>
+                <!--/.col (left) -->
+
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

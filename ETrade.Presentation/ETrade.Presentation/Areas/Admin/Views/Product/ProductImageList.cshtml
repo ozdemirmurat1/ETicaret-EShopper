@@ -1,0 +1,120 @@
+﻿@using ETrade.Presentation.Areas.Admin.Models
+@model ProductImageList
+
+@{
+    Layout = "_Layout";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Product Image Transactions</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/admin/dashboard">Home</a></li>
+                        <li class="breadcrumb-item active">Product Image Transactions</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- /.card -->
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Product Image List</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>ProductId</th>
+                                        <th>Name</th>
+                                        <th>Sort</th>
+                                        <th>Status</th>
+                                        <th>AltText</th>
+                                        <th>Transactions</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.List)
+                                    {
+                                    <tr>
+                                        @if (Model.List.Any(x => x.Id == item.Id))
+                                        {
+                                            <td>@item.Id</td>
+                                            <td><img width="150" src="/products/@Model.List.FirstOrDefault(x=>x.Id ==item.Id).Name" /></td>
+                                            <td>@item.ProductId</td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Sort</td>
+                                            <td>@item.Status</td>
+                                            <td>@item.AltText</td>
+
+                                            <td>
+                                                <a href="/admin/product/ProductImageDelete/@item.Id">Delete</a> |
+                                                <a href="/admin/product/ProductImageEdit/@item.Id">Edit</a> |
+                                                
+                                            </td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.Id</td>
+                                            <td><img width="150" src="" /></td>
+                                            <td>@item.ProductId</td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Sort</td>
+                                            <td>@item.Status</td>
+                                            <td>@item.AltText</td>
+
+                                            <td>
+                                                <a href="/admin/product/ProductImageDelete/@item.Id">Delete</a> |
+                                                <a href="/admin/product/ProductImageEdit/@item.Id">Edit</a> |
+                                                
+                                            </td>
+                                        }
+
+
+                                    </tr>
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>ProductId</th>
+                                        <th>Name</th>
+                                        <th>Sort</th>
+                                        <th>Status</th>
+                                        <th>AltText</th>
+                                        <th>Transactions</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

@@ -1,0 +1,15 @@
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ETrade.Entities.deps.json
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ETrade.Entities.dll
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ref\ETrade.Entities.dll
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ETrade.Entities.pdb
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ETrade.Core.dll
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\bin\Debug\net5.0\ETrade.Core.pdb
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.csproj.AssemblyReference.cache
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.AssemblyInfoInputs.cache
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.AssemblyInfo.cs
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.csproj.CoreCompileInputs.cache
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.dll
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ref\ETrade.Entities.dll
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.pdb
+C:\Users\90545\Desktop\Bitirme_Projesi\ETrade.Presentation\ETrade.Entities\obj\Debug\net5.0\ETrade.Entities.csproj.CopyComplete
